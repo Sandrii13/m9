@@ -1,0 +1,733 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  src: url(Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: italic;
+  src: url(Rubik-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Anton";
+  src: url(Anton-Regular.ttf);
+}
+
+header {
+  background: #1e1e1e;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+}
+.navPag {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 55px;
+  margin-top: 90px;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Anton";
+  font-size: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navPag a {
+  padding: 6px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#logo-header {
+  width: 82%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 0 0 23px;
+}
+#logo-header .logoP {
+  filter: invert(3);
+  width: 60px;
+  height: 60px;
+  position: fixed;
+}
+#rrss-header2 {
+  display: none;
+}
+#rrss-header {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 18px 0 0 13px;
+}
+
+#rrss-header .rrss {
+  filter: invert(3);
+  width: 50px;
+  height: 50px;
+  margin-right: 23px;
+  cursor: pointer;
+}
+#rrss-header .rrss:hover {
+  transform: scale(1.3);
+}
+
+.name {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-left: 100px;
+  font-family: "Anton";
+}
+
+#patrocinadores {
+  position: fixed;
+  left: 0;
+  top: 35%;
+  z-index: 2;
+}
+
+#patrocinadores ul li a {
+  display: inline-block;
+  background: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+.cocacola1 {
+  width: 60px;
+  height: 60px;
+}
+.nike1 {
+  width: 60px;
+  height: 60px;
+}
+.nuria1 {
+  width: 60px;
+  height: 60px;
+}
+.tesla1 {
+  width: 60px;
+  height: 60px;
+}
+#patrocinadores ul li .cocacola {
+  background: #ae181f;
+}
+#patrocinadores ul li .nike {
+  background: #db5203;
+}
+#patrocinadores ul li .nuria {
+  background: #2967b9;
+}
+#patrocinadores ul li .tesla {
+  background: #d8c9ca;
+}
+
+#patrocinadores ul li a:hover {
+  background: #000;
+  padding: 10px 30px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgp {
+  background-image: url(img/run.jpg);
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.imgp2 {
+  background-image: url(img/img2.jpg);
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.imgp3 {
+  background-image: url(img/agua.jpg);
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.imgp4 {
+  background-image: url(img/xip.jpg);
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.imgp5 {
+  background-image: url(img/img5.jpg);
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.imgp6 {
+  background-image: url(img/masc.jpg);
+  height: 100vh;
+  position: relative;
+  z-index: -2;
+}
+
+.txt {
+  height: 950px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.runImg {
+  background-image: url(img/runImg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  filter: invert(3);
+  width: 30%;
+  height: 30%;
+  right: 0;
+  margin-right: 10%;
+  top: 50%;
+}
+
+.center {
+  margin: 3% 10%;
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.video {
+  margin-top: 12%;
+  width: 48%;
+  height: 100%;
+  text-align: center;
+}
+.video1 {
+  margin-top: 9%;
+  width: 48%;
+  height: 100%;
+  text-align: center;
+}
+.video1 p {
+  font-family: "Rubik";
+}
+.vFrame {
+  width: 100%;
+  height: 75%;
+  border: none;
+}
+.vMap {
+  width: 100%;
+  height: 75%;
+  border: none;
+}
+
+.present {
+  width: 48%;
+  height: 100%;
+  margin-top: 9.5%;
+}
+.present p {
+  font-size: 1.5vw;
+  text-align: justify;
+  margin-top: 6%;
+  font-family: "Rubik";
+}
+.present strong {
+  font-family: "Rubik";
+  font-style: italic;
+}
+h1,
+h2 {
+  font-family: "Anton";
+  letter-spacing: 0.2vw;
+}
+.center2 {
+  margin: 3% 10%;
+  position: absolute;
+  width: 80%;
+  height: 75%;
+}
+.consells {
+  margin-top: 9%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.consells h1 {
+  font-size: 3vw;
+}
+.pack {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.part {
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 3%;
+  margin-top: 5%;
+  height: 70%;
+  width: 30%;
+  color: #ffffff;
+  border-radius: 15px;
+}
+.part2 {
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 3%;
+  margin-top: 5%;
+  height: 70%;
+  width: 47%;
+  color: #ffffff;
+  border-radius: 15px;
+}
+.part2 p {
+  font-family: "Rubik";
+  text-align: justify;
+  font-size: 1vw;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.part p,
+li {
+  font-family: "Rubik";
+  text-align: justify;
+  font-size: 0.8vw;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.gif {
+  margin-top: 1%;
+  margin-left: 30%;
+  width: 13vw;
+  height: 13vw;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 1%;
+  margin-top: 9%;
+  font-family: "Anton";
+}
+
+.formulario {
+  margin-top: 5%;
+  font-family: "Rubik";
+  font-size: 1vw;
+  display: grid;
+  grid-gap: 2.25rem;
+}
+
+button,
+input,
+textarea {
+  font-family: "Rubik";
+  margin-top: 1%;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.adinfo {
+  grid-column: 1/3;
+}
+
+.boton-enviar {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1vw;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 162%;
+}
+
+.fin {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.8vw;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  margin-left: 5%;
+}
+
+#patroMovil {
+  display: none;
+}
+
+@media screen and (max-height: 640px) and (max-width: 360px) {
+  .navPag {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Anton";
+    font-size: 10px;
+  }
+  .navPag a {
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #patrocinadores {
+    display: none;
+  }
+
+  .txt {
+    height: 610px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+  }
+  .center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vFrame {
+    margin-top: 18%;
+    width: 165%;
+    height: 110%;
+    border: none;
+  }
+  .present {
+    width: 80%;
+    height: 200%;
+    margin-top: 12%;
+  }
+  .present p {
+    font-size: 2.8vw;
+    text-align: justify;
+    margin-top: 6%;
+    font-family: "Rubik";
+  }
+
+  .video1 {
+    width: 80%;
+    height: 100%;
+  }
+  .video1 p {
+    font-family: "Rubik";
+    font-size: 3vw;
+    width: 100%;
+    text-align: justify;
+
+    position: relative;
+    bottom: 10%;
+  }
+  .video1 h1 {
+    font-size: 3.8vw;
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+  }
+  .vMap {
+    height: 50%;
+
+    position: relative;
+    bottom: 10%;
+  }
+
+  .center2 {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+  }
+  .consells {
+    text-align: center;
+  }
+  .consells h1 {
+    font-size: 3.8vw;
+  }
+  .consells h2 {
+    font-size: 3.5vw;
+    margin-bottom: 4%;
+  }
+  .pack {
+    display: flex;
+    flex-direction: column;
+    height: 46%;
+  }
+  .margKm {
+    margin-top: 28%;
+  }
+  .margn {
+    margin-top: 28%;
+  }
+  .part {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+  .part p,
+  li {
+    font-family: "Rubik";
+    text-align: justify;
+    position: relative;
+    bottom: 24%;
+    font-size: 2.3vw;
+    padding: 1%;
+    margin: 0;
+  }
+  .hidden {
+    display: none;
+  }
+  .gif {
+    display: none;
+  }
+  .part2 {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 150%;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+  .part2 p {
+    font-family: "Rubik";
+    text-align: justify;
+    position: relative;
+    bottom: 24%;
+    font-size: 2.8vw;
+    padding: 1%;
+    margin: 0;
+  }
+  .part2 .h2 {
+    margin-bottom: 20%;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 40%;
+    font-family: "Anton";
+  }
+  .formulario {
+    margin-top: 15%;
+    font-family: "Rubik";
+    font-size: 4vw;
+    display: grid;
+    grid-gap: 2.25rem;
+  }
+
+  button,
+  input,
+  textarea {
+    font-family: "Rubik";
+    margin-top: 2%;
+    width: 100%;
+    padding: 0.3rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .adinfo {
+    grid-column: 1 / 3;
+  }
+
+  .boton-enviar {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 4vw;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 165%;
+  }
+
+  .fin {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.8vw;
+    margin-bottom: 10%;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+  }
+  #patroMovil {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #1e1e1e;
+    position: relative;
+    z-index: 1;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .cocacola1 {
+    width: 50px;
+    height: 50px;
+  }
+  .nike1 {
+    width: 50px;
+    height: 50px;
+  }
+  .nuria1 {
+    width: 50px;
+    height: 50px;
+  }
+  .tesla1 {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  #rrss-header {
+    display: none;
+  }
+  #rrss-header2 {
+    width: 110%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 18px 0 0 13px;
+  }
+  #rrss-header2 .puntos {
+    filter: invert(3);
+    width: 50px;
+    height: 50px;
+  }
+  #rrss-header2 .rrss2 {
+    width: 50px;
+    height: 50px;
+    filter: invert(3);
+  }
+
+  nav li {
+    position: relative;
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+  }
+  nav li > menu {
+    position: absolute;
+  }
+  nav > menu > li {
+    pointer-events: all;
+    opacity: 1;
+  }
+  menu .li a {
+    white-space: nowrap;
+    display: block;
+  }
+  .li:hover > menu {
+    pointer-events: initial;
+  }
+  nav a {
+    padding: 2px;
+    background: #1e1e1e;
+  }
+  nav a:hover:before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+  }
+  nav > menu > li > menu > .li {
+    transition: transform 0.7s;
+    transform: translateY(130%);
+  }
+  nav > menu > li:hover > menu > .li,
+  nav > menu > li.hover > menu > .li {
+    transform: translateY(110%);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 580px) {
+  #rrss-header {
+    display: none;
+  }
+  .name {
+    display: none;
+  }
+  #rrss-header2 {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 18px 0 0 13px;
+  }
+  #rrss-header2 .puntos {
+    filter: invert(3);
+    width: 50px;
+    height: 50px;
+  }
+  #rrss-header2 .rrss2 {
+    width: 50px;
+    height: 50px;
+    filter: invert(3);
+  }
+
+  nav menuitem {
+    position: relative;
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+  }
+  nav menuitem > menu {
+    position: absolute;
+  }
+  nav > menu > menuitem {
+    pointer-events: all;
+    opacity: 1;
+  }
+  menu menuitem a {
+    white-space: nowrap;
+    display: block;
+  }
+  menuitem:hover > menu {
+    pointer-events: initial;
+  }
+  nav a {
+    padding: 2px;
+    background: #1e1e1e;
+  }
+  nav a:hover:before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+  }
+  nav > menu > menuitem > menu > menuitem {
+    transition: transform 0.7s;
+    transform: translateY(130%);
+  }
+  nav > menu > menuitem:hover > menu > menuitem,
+  nav > menu > menuitem.hover > menu > menuitem {
+    transform: translateY(110%);
+    opacity: 1;
+  }
+}
